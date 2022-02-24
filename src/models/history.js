@@ -14,11 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   History.init({
-
-
     patientId: DataTypes.INTEGER,
     doctorId: DataTypes.INTEGER,
-    description: DataTypes.TEXT
+    description: DataTypes.TEXT,
+    files: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'History',
@@ -26,7 +25,3 @@ module.exports = (sequelize, DataTypes) => {
   return History;
 };
 
-    // maxNumber: DataTypes.INTEGER,
-    // date: DataTypes.DATE,
-    // timeType: DataTypes.STRING,
-    // doctorId: DataTypes.INTEGER,
