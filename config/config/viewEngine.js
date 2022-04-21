@@ -1,4 +1,4 @@
-import express from "express"
+zimport express from "express"
 
 let configViewEngine = (app) => {
     app.use(express.static("./src/public"));
